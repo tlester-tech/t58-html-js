@@ -10,6 +10,7 @@
       var tempC = (5 / 9 * (tempF - 32)).toFixed(1);
 
       newText = tempC + " &deg;C";
+      // TODO: add tip if temp is below freezing
       document.getElementById('answer').innerHTML = newText;
     }
   </script>
@@ -26,10 +27,11 @@
 
 <!--
 Ideas to expand the program:
-1. Change the message to show the temperature in F and C, i.e. 'The temperature 104 F is 40.0 C'
-2. Add the low and high temperature advice like the python program.
-3. Adjust styles.css to make the answer red. 
-4. Add button to clear the input and answer.
-5. Add button to convert to Kelvin.
-6. Add option to change from F to C or C to F (advanced)
+1. Add tip if temp is below freezing 
+2. Add tip if temperature is hot
+3. Change the message to show the temperature in F and C, i.e. 'The temperature 104 F is 40.0 C'
+4. Adjust styles.css to make the answer red. 
+5. Add button to clear the input and answer.
+6. Add button to convert to Kelvin.
+7. Add option to change from F to C or C to F (advanced)
 -->
