@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Example JS Program</title>
+  <script>
+    function convertToCelsius() {
+      var tempF = document.getElementById('inputTemp').value;
+      var tempC = (5 / 9 * (tempF - 32)).toFixed(1);
+
+      newText = tempF + "&deg;F converts to " + tempC + " &deg;C";
+      document.getElementById('answer').innerHTML = newText;
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Enter temperature in fahrenheit</h2>
+  <input type="text" id="inputTemp" />
+  <button onclick="convertToCelsius()">Convert to Celsius</button>
+  <p id="answer"></p>
+</body>
+
+</html>
